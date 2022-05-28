@@ -1,23 +1,11 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*{  
+    background-color: #282c34;
+    box-sizing: border-box;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 100px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -28,11 +16,84 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.currencies {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(2, 226, 226);
+    width: 150px;
+    font-size: 30px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    color: #282c34;
+}
+.currency-rate {
+    text-align: center;
+    background-color: rgb(2, 226, 226);
+    width: 150px;
+    font-size: 30px;
+    font-weight: 500;
+    border: none;
+    border-radius: 0 0 8px 8px;
+    color: #282c34;
+    margin-top: 6px;
+}
+
+.btn-wrapper {
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.currency-info {
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.form {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input {
+    width: 920px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: calc(10px + 2vmin);
+    border-bottom: solid rgb(116, 116, 116);
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+    border-bottom: solid rgba(2, 226, 226, 0.774);
+}
+
+input:hover {
+    outline: none;
+    border: none;
+    border-bottom: solid rgba(2, 226, 226, 0.774);
 }
